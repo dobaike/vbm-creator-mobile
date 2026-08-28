@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "VBM Creator Mobile",
+    "slug": "vbm-creator-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0b0f19"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nativedge.vbm.creator"
+    },
+    "android": {
+      "package": "com.nativedge.vbm.creator",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0b0f19"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "USE_BIOMETRIC",
+        "INTERNET"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow VBM Creator Mobile to use Face ID for biometric masterclass check-in."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "your-eas-project-id"
+      }
+    }
+  }
+}
